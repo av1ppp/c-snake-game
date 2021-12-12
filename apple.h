@@ -5,7 +5,7 @@
 
 #include "utils.h"
 
-char APPLE_CHAR = '@';
+char APPLE_CHAR = '*';
 
 typedef struct {
   int x, y;

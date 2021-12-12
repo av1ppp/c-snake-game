@@ -73,8 +73,8 @@ void move_snake(Snake *snake, int vx, int vy) {
 
   // move x
   if (snake->head->x + vx <= 0) {
-    snake->head->x = WIDTH-1;
-  } else if (snake->head->x + vx >= WIDTH) {
+    snake->head->x = WIDTH-2;
+  } else if (snake->head->x + vx >= WIDTH-1) {
     snake->head->x = 1;
   } else {
     snake->head->x += vx;
@@ -82,8 +82,8 @@ void move_snake(Snake *snake, int vx, int vy) {
 
   // move y
   if (snake->head->y + vy <= 0) {
-    snake->head->y = HEIGHT-1;
-  } else if (snake->head->y + vy >= HEIGHT) {
+    snake->head->y = HEIGHT-2;
+  } else if (snake->head->y + vy >= HEIGHT-1) {
     snake->head->y = 1;
   } else {
     snake->head->y += vy;
